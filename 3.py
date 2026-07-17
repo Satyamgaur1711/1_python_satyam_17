@@ -1,0 +1,26 @@
+st = {1, 2, 3}
+# empty set aishe banaty hai
+emptyset = set()
+n1 = input("Enter you number 1: ")
+st.add(int(n1))
+n2 = input("Enter you number 2: ")
+st.add(int(n2))
+n3 = input("Enter you number 3: ")
+st.add(int(n3))
+n4 = input("Enter you number 4: ")
+st.add(int(n4))
+n5 = input("Enter you number 5: ")
+st.add(int(n5))
+n6 = input("Enter you number 6: ")
+st.add(int(n6))
+n7 = input("Enter you number 7: ")
+st.add(int(n7))
+n8 = input("Enter you number 8: ")
+st.add(int(n8))
+
+print(st)
+s = set()
+s.add(55)
+s.add("55")
+print(s)
+

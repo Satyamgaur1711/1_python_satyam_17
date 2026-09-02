@@ -1,4 +1,4 @@
 print("hallow world")
 you = input("enter you name")
-if you == "chutiya":
-    print("TMKC")
+if you == "raj"or "aman"or "piyush":
+    print("CHUTIYA")

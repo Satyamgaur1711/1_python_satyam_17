@@ -18,5 +18,9 @@ obj2 = book("java_book", 200)
 print(obj1)  # this will call the __str__() method of the class book and return the string representation of the object obj1.
 print(obj2)
 
+# dunder methods apne aap call hote hai jab hum unpy operation parform karty hai.
+
+# puri python dunder methods ke puar baised hai jab ham a = 10,  b = 12. jab ham a + b call karty hai to python internally a.__add__(b) call karty hai. yehi dunder methods ka main concept hai.
+
 
 print(obj1 + obj2)  # this will call the __add__() method of the class book and return the sum of the pages of the two objects obj1 and obj2.

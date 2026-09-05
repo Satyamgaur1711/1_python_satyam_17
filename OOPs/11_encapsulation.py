@@ -6,7 +6,8 @@ class animal:
     def __init__(self, name, age):
         self.name = name # public object/instance attribute
         self.age = age
-
+    def hallow(): # public method of class
+        print("hallow, this is method of class animal")
 
 obj1 = animal("dog", 5)
 obj1.a = 10
@@ -22,6 +23,8 @@ class factory():
     def __init__(self, item, quantity):
         self.item = item
         self.quantity = quantity
+    def __hallowtouser():
+        print("hallow, this is method of class factory")  # hear we use double underscore to make the method private and protect it from outside the class.
 
 obj2 = factory("car", 1000)
 

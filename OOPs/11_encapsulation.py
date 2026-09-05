@@ -1,10 +1,10 @@
 print("hallo, now i am using git for my code bas")
 
 class animal:
-    a = 12
+    a = 12 # public class attribute
     string = "hallo, this is string in class animal"
     def __init__(self, name, age):
-        self.name = name 
+        self.name = name # public object/instance attribute
         self.age = age
 
 

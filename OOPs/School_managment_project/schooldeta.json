@@ -1,11 +1,26 @@
 {
-    "Students": [],
+    "Students": [
+        {
+            "name_student": "satyam",
+            "Roll number": 1,
+            "Student_mail": "@.",
+            "Grade": {
+                "math": 95
+            }
+        },
+        {
+            "name_student": "aman",
+            "Roll number": 2,
+            "Student_mail": "@.a",
+            "Grade": {}
+        }
+    ],
     "Teachers": [
         {
-            "Name_techer": "hfy",
+            "Name_techer": "satyam ",
             "Employ_mail": "@.",
-            "Employ Id": 12,
-            "subject tech": "adf"
+            "Employ Id": 1711,
+            "subject tech": "biology"
         }
     ]
 }

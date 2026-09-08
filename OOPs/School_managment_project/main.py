@@ -55,7 +55,9 @@ class students(person):
         name = input("Enter you name: ")
         roll_n = int(input("Enter you roll number: "))
         mail = input("Enter you mail hear:  ")
-        grade = {}
+        grade = {"physics": None,
+                 "chemistry": None,
+                 "math": None}
 
         if not validate_mail(mail):
             print("Invalid mail Run program again......")
@@ -91,7 +93,7 @@ class students(person):
             if i["Roll number"] == roll_n:
                sub_name = input("Enter you subject name: ")
                sub_mark = int(input(f"Enter your marks in {sub_name}"))
-               i["Grade"] = {sub_name: sub_mark}
+               i["Grade"][sub_name] = sub_mark
         save()
         print("your subject addion is succesfull")
 

@@ -5,7 +5,8 @@
             "Roll number": 1,
             "Student_mail": "@.",
             "Grade": {
-                "math": 95
+                "math": 45,
+                "physics ": 45
             }
         },
         {

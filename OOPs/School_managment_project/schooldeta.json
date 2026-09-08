@@ -14,6 +14,26 @@
             "Roll number": 2,
             "Student_mail": "@.a",
             "Grade": {}
+        },
+        {
+            "name_student": "raj shukla",
+            "Roll number": 3,
+            "Student_mail": "raj@gmail.com",
+            "Grade": {
+                "physics": null,
+                "chemistry": null,
+                "math": null
+            }
+        },
+        {
+            "name_student": "piyush shukla",
+            "Roll number": 4,
+            "Student_mail": "piyush@gmail.com",
+            "Grade": {
+                "physics": null,
+                "chemistry": null,
+                "math": null
+            }
         }
     ],
     "Teachers": [

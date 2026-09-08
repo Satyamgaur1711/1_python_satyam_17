@@ -1,18 +1,21 @@
 # it is a school managment system to mannage deta of student and teacher.
-
+# is file jo jishe termial path me raun karogi waha py schooldeta.json name ke file honi chahiye nahi to ye schooldeta.json naam ke file waha bana dega jaha py program run ho raha hai
 import json
 from abc import ABC,abstractmethod
 from pathlib import Path
 
 
 deta = {"Students": [], "Teachers":[]} # it is dictionary hear we have deta student and teacher in dict form.
+if Path("schooldeta.json").exists():
+    with open("schooldeta.json", "r") as f:
+        r_deta = f.read()
+        if r_deta:
+            deta = json.loads(r_deta)
+        else:
+            deta = {"Students": [], "Teachers":[]}
+else:
+    deta = {"Students": [], "Teachers":[]}
 
-with open("schooldeta.json", "r") as f:
-    r_deta = f.read()
-    if r_deta:
-       deta = json.loads(r_deta)
-    else:
-        deta = {"Students": [], "Teachers":[]}
 
 def save():
     with open("schooldeta.json", "w") as k:
@@ -21,6 +24,8 @@ def save():
 def validate_mail(gmail):
     if "@" in gmail and "." in gmail:
         return True
+    else:
+        return False
 
 def exit_rollno(rollnumber):
     exist = False
@@ -155,23 +160,32 @@ class techers(person):
         pass
 
 
-print("Enter one(1) to register STUDETN:-- ")
-print("Enter two (2) to register TECHER:-- ")
-print("Enter three (3) to add grade of STUDENT:-- ")
-print("Enter four (4) to print DETAIL of STUDENT:--")
-print("Enter five (5) to print DETAIL of TEACHER")
-
 
 student = students()
 tech = techers()
-choise = int(input("Enter you choise:  "))
-if choise == 1:
-    student.rg()
-if choise == 2:
-    tech.rg()
-if choise == 3:
-    student.update_gd()
-if choise == 4:
-    student.get_dt()
-if choise == 5:
-    tech.get_dt()
+
+while True:
+    print("Enter one(1) to register STUDETN:-- ")
+    print("Enter two (2) to register TECHER:-- ")
+    print("Enter three (3) to add grade of STUDENT:-- ")
+    print("Enter four (4) to print DETAIL of STUDENT:--")
+    print("Enter five (5) to print DETAIL of TEACHER")
+    print("Enter six(6) to EXIT the program:  ")
+    choise = int(input("Enter you choise:  "))
+    if choise == 1:
+        student.rg()
+    elif choise == 2:
+        tech.rg()
+    elif choise == 3:
+        student.update_gd()
+    elif choise == 4:
+        student.get_dt()
+    elif choise == 5:
+        tech.get_dt()
+    elif choise == 6:
+        print("Exiting the program:.. Bye.....")
+        break
+    else:
+        print("you are entring Wrong input.....")
+        break
+    

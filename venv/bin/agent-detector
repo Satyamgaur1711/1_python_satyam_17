@@ -1,0 +1,6 @@
+#!/home/satyamgaur/Desktop/python_programming/1_python_satyam_17/venv/bin/python3
+import sys
+from agent_detector._cli import main
+if __name__ == '__main__':
+    sys.argv[0] = sys.argv[0].removesuffix('.exe')
+    sys.exit(main())
